@@ -1,0 +1,43 @@
+# ── Build / Target ────────────────────────────────────────────────────────────
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ── Maven Wrapper ─────────────────────────────────────────────────────────────
+.mvn/wrapper/maven-wrapper.jar
+
+# ── Secrets — NEVER commit these ─────────────────────────────────────────────
+.env
+.env.local
+# NOTE: application.properties is safe to commit because it uses ${ENV_VAR}
+# Only ignore if you use a separate secrets file:
+src/main/resources/application-secret.properties
+
+# ── Logs & junk ───────────────────────────────────────────────────────────────
+*.log
+logs/
+banking.log
+lombok.jar
+"New Text Document.txt"
+
+# ── IDE — IntelliJ ────────────────────────────────────────────────────────────
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# ── IDE — Eclipse / STS ───────────────────────────────────────────────────────
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# ── IDE — VS Code ─────────────────────────────────────────────────────────────
+.vscode/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
